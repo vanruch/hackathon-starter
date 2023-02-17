@@ -2,5 +2,9 @@
   "Counter": {
     "txHash": "0x2c675fe2d6a4552a009e253a865ac501fe038d238a6a16604d03144df4826dbc",
     "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  },
+  "ByteCodeCaller": {
+    "txHash": "0xc1738f59939f7c964b170411b2a2cf643e2760ee6e58924fd1450e945038a568",
+    "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
   }
 }

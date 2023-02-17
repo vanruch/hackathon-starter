@@ -4,6 +4,7 @@ import fs from "fs/promises";
 
 const rpcs = {
   31337: "http://127.0.0.1:8545",
+  420: "https://optimism-goerli.infura.io/v3/f88abc181a4a45a6bc47bdda05a94944",
 };
 
 $`anvil`;

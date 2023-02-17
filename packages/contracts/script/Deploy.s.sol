@@ -3,6 +3,7 @@ pragma solidity ^0.8.18;
 
 import "forge-std/Script.sol";
 import "../src/Counter.sol";
+import "../src/ByteCodeCaller.sol";
 
 contract CounterScript is Script {
     function setUp() public {}
@@ -13,6 +14,8 @@ contract CounterScript is Script {
 
         Counter counter = new Counter();
         counter.setNumber(10);
+
+        ByteCodeCaller caller = new ByteCodeCaller();
 
         vm.stopBroadcast();
     }
