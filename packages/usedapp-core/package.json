@@ -7,6 +7,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "ethers": "^6.0.4"
   },
   "devDependencies": {
     "typescript": "^4.9.5"
