@@ -1,0 +1,11 @@
+{
+  "spec": "src/**/*.test.{ts,tsx}",
+  "require": ["ts-node/register/transpile-only"],
+  "watchExtensions": "ts",
+  "extension": "ts",
+  "timeout": 10000,
+  "node-option": [
+    "experimental-specifier-resolution=node",
+    "loader=ts-node/esm"
+  ]
+}
