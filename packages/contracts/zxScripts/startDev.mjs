@@ -11,7 +11,7 @@ $`anvil`;
 await spinner("Waiting for anvil to be ready", () => sleep(1000));
 
 const chainId = argv.chainId ?? 31337;
-const scriptName = (argv.scriptName ?? "Counter") + ".s.sol";
+const scriptName = (argv.scriptName ?? "Deploy") + ".s.sol";
 const scriptPath = path.join(__dirname, `../script/${scriptName}`);
 
 await $`forge script ${scriptPath} --rpc-url ${rpcs[chainId]} --broadcast`;
