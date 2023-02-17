@@ -1,0 +1,14 @@
+{
+  "name": "usedapp-core",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
