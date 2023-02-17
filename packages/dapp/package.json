@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ethers": "^6.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:ui"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
