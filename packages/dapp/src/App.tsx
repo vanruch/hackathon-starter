@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Button } from "ui";
 
-import { BrowserProvider, Interface } from 'ethers'
+import { BrowserProvider, Interface, JsonRpcProvider } from 'ethers'
 import {  executeBytecode } from "./abis/ByteCodeCaller";
 import { flexiblePortfolioGetterAbi, flexiblePortfolioGetterBytecode } from "./abis/FlexiblePortfolioGetterAbi";
 
@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     let timeOut: NodeJS.Timeout;
     new Promise(async () => {
-      const provider = new BrowserProvider((window as any).ethereum)
+      const provider = new JsonRpcProvider('https://optimism-goerli.infura.io/v3/f88abc181a4a45a6bc47bdda05a94944')
       const fpInterface = new Interface(flexiblePortfolioGetterAbi)
       const splitAddresses = addresses.split(',')
       
